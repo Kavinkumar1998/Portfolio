@@ -1,0 +1,26 @@
+.footer-main{
+    background-color: var(--purple);
+        margin: 0;
+        padding: 0;
+        width:100vw;
+        height:20vh;
+        margin:-0.5rem -3.5rem;
+      
+}
+.details{
+    text-align: center;
+    padding: 4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:30px;  
+     color: black;
+}
+@media screen and (max-width: 480px) {
+    .footer-main{
+width:30rem;
+    }
+    .details{
+     transform: scale(0.8);
+     font-size:20px;  
+     text-align: center;
+    }
+}

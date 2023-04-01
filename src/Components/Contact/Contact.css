@@ -1,0 +1,70 @@
+.Contact{
+    display:flex;
+    height :80vh;
+    padding-top:10rem; 
+}
+.c-right{
+    display:flex;
+    justify-content:center;
+    position:relative;
+    flex:1;
+}
+.c-right>form{
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+    align-items:center;
+}
+.c-right .User{
+    width:20rem;
+    height:2rem;
+    padding:0.5rem;
+    outline:none;
+    border:2px solid var(--orange);
+    border-radius:8px;
+    font-size:16px;
+}
+
+textarea{
+    height:4rem !important;
+}
+
+
+.c-left{
+    display:flex;
+    position: realtive;
+    flex:1;
+    flex-direction:column;
+    gap :2rem;
+}
+.content{
+    display:flex;
+    flex-direction:column;
+}
+.content>:nth-child(1){
+    color:var(--black);
+   font-weight:bold ;
+   font-size:5em;
+  }
+  .content>:nth-child(2){
+    color: var(--orange);
+    font-weight: bold;
+    font-size:3rem;
+  }
+  @media screen and (max-width: 480px) {
+.Contact{
+    display: flex; 
+    flex-direction:column;
+    height: auto;
+
+    }
+    .c-left{
+        transform: scale(0.8);
+        align-self: center;
+        padding-left: 3rem;
+    }
+.c-right{
+    transform: scale(0.8);
+    align-self: center;
+}
+  }

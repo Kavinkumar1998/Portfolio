@@ -1,0 +1,84 @@
+.Skills{
+    display:flex;
+    height :80vh;
+    margin-top:1rem;  
+}
+.s-left{
+    z-index: 1;
+    width:100vw;
+}
+.Skills-me{
+    color:var(--orange);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:50px;  
+}
+.Skills-me:hover{
+    cursor:pointer;
+    color:black
+}
+.Techs{
+    padding-top:2rem;
+    display:flex;
+    position: realtive;
+    flex:1;
+    flex-direction:row;
+    flex-wrap: wrap;
+    gap :6rem; 
+}
+.Techs>*{
+    height:10%;
+    width:10%;
+    flex:1;
+    box-shadow : 3px 3px 10px 0px rgb(22, 11, 11);
+    border-radius: 20px;
+}
+.Techs>*:hover{
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+     cursor: pointer;
+     transform:scale(1.3)
+ 
+ }
+
+ .s-right{
+    z-index: 1;
+    width:100vw;
+    padding-left:5rem;
+ }
+
+ .skills-head{
+    color:var(--orange);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:50px;  
+}
+.skills-head:hover{
+    cursor:pointer;
+    color:black
+}
+.skills-list>*{
+   padding-top: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+    .Skills{
+        display: flex; 
+        flex-direction:column;
+        height: auto;
+        transform: scale(0.8);
+        align-self: center;
+    }
+    .Techs{
+        padding-top:2rem;
+      
+    }
+    .Techs>*{
+     transform: scale(1.5);
+       
+    }
+    .s-right{
+        padding-top:3rem;
+       align-self: center;
+       transform: scale(1);
+
+     }
+  
+}
