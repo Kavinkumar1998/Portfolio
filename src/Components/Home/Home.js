@@ -15,6 +15,11 @@ const Home = () => {
   
 const theme=useContext(themeContext);
 const darkMode=theme.state.darkMode;
+function redirect(){
+  window.open(
+    "https://drive.google.com/file/d/1biLWfq0BJ1nJfkT2-nvplP3VfC8aw1ja/view"
+  );
+}
   return (
     <div className='Home' id="Home">
       <div className='h-left'>
@@ -26,13 +31,13 @@ const darkMode=theme.state.darkMode;
             <span>Kavin Kumar</span>
             <span>FullStack Developer</span>
         <div className="h-icons">
-            <a href="https://github.com/Kavinkumar1998"><img src={gitIcon} alt="GitHub" /></a>
-          <a href="https://www.linkedin.com/in/kavin-kumar-060343153/">
+            <a href="https://github.com/Kavinkumar1998" target='blank'><img src={gitIcon} alt="GitHub" /></a>
+          <a href="https://www.linkedin.com/in/kavin-kumar-060343153/" target='blank'>
           <img src={LinkedIn } alt="LinkedIn"/>
           </a>
         </div>
         </div>
-       <button className='button resume-download'>RESUME</button>
+       <button className='button resume-download' onClick={redirect()}>RESUME</button>
       </div>
       <div className='h-right'>
       <img src={basic} alt="basic"/>
