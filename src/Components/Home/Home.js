@@ -11,15 +11,17 @@ import mongo from "./homeimages/mongodb.png";
 import atlas from "./homeimages/atlas.png";
 import mui from "./homeimages/mui.png";
 import { themeContext } from '../../Context';
-const Home = () => {
-  
-const theme=useContext(themeContext);
-const darkMode=theme.state.darkMode;
+
 function redirect(){
   window.open(
     "https://drive.google.com/file/d/1biLWfq0BJ1nJfkT2-nvplP3VfC8aw1ja/view"
   );
 }
+const Home = () => {
+  
+const theme=useContext(themeContext);
+const darkMode=theme.state.darkMode;
+
   return (
     <div className='Home' id="Home">
       <div className='h-left'>
@@ -37,7 +39,7 @@ function redirect(){
           </a>
         </div>
         </div>
-       <button className='button resume-download' onClick={redirect()}>RESUME</button>
+       <button className='button resume-download' onClick={redirect}>RESUME</button>
       </div>
       <div className='h-right'>
       <img src={basic} alt="basic"/>
