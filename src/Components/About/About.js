@@ -16,7 +16,10 @@ const About = () => {
         <h2>
         Hi, im a well Qualified FullStack Developer Familiar with knowlwdge of HTML,CSS and Advanced JavaScript.
 Knowledgeble of Frontend and Backend Development with Database Management.Handles any part of the process with ease.
-Collaborative team player with a willingness to learn in and grow with the organization.
+As a Collaborative team player with a willingness to learn in and grow with the organization.
+I am committed to staying up-to-date with the latest industry trends and technologies, 
+and I am confident that my dedication and proficiency will allow me to excel in my role and 
+contribute to the success of the team.
         </h2>
          </div>
       <div className="a-right"> 
