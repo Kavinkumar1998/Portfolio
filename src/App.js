@@ -7,6 +7,7 @@ import Home from './Components/Home/Home';
 import Navbar from './Components/Nav-bar/Navbar';
 import Skills from './Components/Skills/Skills';
 import { themeContext } from './Context';
+import Projects from './Components/Projects/Projects';
 function App() {
 const theme= useContext(themeContext);
 const darkMode = theme.state.darkMode;
@@ -21,6 +22,7 @@ const darkMode = theme.state.darkMode;
       <Home/>
       <About/>
       <Skills/>
+      <Projects/>
       <Contact/>
       <Footer/>
     </div>

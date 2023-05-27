@@ -1,9 +1,112 @@
-import React from 'react'
-import"./Project.css"
+import React from 'react';
+import"./Projects.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import Bulkmail from "./images/bulkmail.jpg";
+import Phonecart from "./images/phone kart.jpg";
+import Movieapp from "./images/movie app.jpg";
+import CRM from "./images/crm.jpg";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { EffectCoverflow, Navigation, Pagination } from 'swiper';
+import { themeContext } from '../../Context';
+import { useContext } from 'react';
 const Projects = () => {
+
+  const projects = [
+    {
+      id: "Bulk Mail Tool",
+      title: "Bulk Mail Tool",
+      imgSrc: Bulkmail,
+      frontEndSource: "https://github.com/Kavinkumar1998/Bulkemailtool-frontend",
+      live: "https://bulkemailtool.netlify.app/",
+      backEndSource: "https://github.com/Kavinkumar1998/Bulkemailtool-backend",
+    },
+    {
+      id: "Phone-cart",
+      title: "Phone-cart",
+      imgSrc: Phonecart,
+      frontEndSource: "https://github.com/Kavinkumar1998/Deployment-practice-frontend",
+      live: "https://phonecart-app.netlify.app/",
+      backEndSource: "https://github.com/Kavinkumar1998/Deployment-practice",
+    },
+    {
+      id: "movie-app",
+      title: "Movie Review App",
+      imgSrc: Movieapp,
+      frontEndSource: "https://github.com/Kavinkumar1998/Passwordresetflow",
+      live: "https://passwordresetmovieapp.netlify.app/",
+      backEndSource: "https://github.com/Kavinkumar1998/Passwordrestflow-backend",
+    },
+    {
+      id: "CRM",
+      title: "CRM app",
+      imgSrc: CRM,
+      frontEndSource:"https://github.com/Kavinkumar1998/Webcode-frontend",
+      live: "https://crmmangementapp.netlify.app/",
+      backEndSource: "https://github.com/Kavinkumar1998/wecodeBackend",
+    },
+  ];
+
+  const openLink = (link) => {
+    console.log("opened");
+    window.open(link, "_blank");
+  };
+  const theme=useContext(themeContext);
+  const darkMode=theme.state.darkMode;
+  
   return (
-    <div className='projects'id="Projects">
-        <h1>Projects</h1>
+    <div  className='projects'id="Projects">
+        <h1 className='project-heading'>Projects</h1>
+        <div className='credentials'>
+          
+        <p style={{
+      background:darkMode?"purple":"",
+      color:darkMode?"white":""
+    }}>credentials</p>
+        <p style={{
+      background:darkMode?"purple":"",
+      color:darkMode?"white":""
+    }}>Email : kavinajith1498@gmail.com</p>
+          <p  style={{
+      background:darkMode?"purple":"",
+      color:darkMode?"white":""
+    }}>Password : 123456789</p>
+    </div>
+        <Swiper
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={"auto"}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 3,
+          slideShadows: true,
+        }}
+        navigation
+        pagination={true}
+        modules={[EffectCoverflow, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        {projects.map((project) => (
+          <SwiperSlide id='swiper-slide' key={project.id}>
+            <img src={project.imgSrc} alt={`Project ${project.id}`} />
+            <h2 className='heading-2'>{project.title}</h2>
+            <div className="slider-buttons">
+              <button onClick={() => openLink(project.frontEndSource)}>
+                Front End Source
+              </button>
+              <button onClick={() => openLink(project.live)}>Live</button>
+              <button onClick={() => openLink(project.backEndSource)}>
+                Back End Source
+              </button>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   )
 }
