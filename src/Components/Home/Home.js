@@ -14,7 +14,7 @@ import { themeContext } from '../../Context';
 
 function redirect(){
   window.open(
-    "https://drive.google.com/file/d/1I00x7bEaIj9Lls20TPklBXvyJMClzbLT/view?usp=sharing"
+    "https://drive.google.com/file/d/12vXcoRrL-8g6r7WekdwJ0vH6XIibr2y2/view?usp=sharing"
   );
 }
 const Home = () => {
