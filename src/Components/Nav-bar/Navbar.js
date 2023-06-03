@@ -12,15 +12,15 @@ const Navbar = () => {
         <div className='navbar-right'> 
         <div className="navbar-list" >
         <ul style={{listStyleType:"none"}}>
-          <Link spy={true} to="Home"   offset={-100} smooth={true}>   <li>Home</li> </Link>
+          <Link spy={true} to="Home" className='nav-items'  offset={-100} smooth={true}>   <li>Home</li> </Link>
          
-            <Link spy={true} to="About"   offset={50} smooth={true}> <li>About</li></Link>
+            <Link spy={true} to="About" className='nav-items'  offset={50} smooth={true}> <li>About</li></Link>
            
-            <Link spy={true} to="Skills"   offset={-100} smooth={true}> <li>Skills</li></Link>
+            <Link spy={true} to="Skills" className='nav-items'  offset={-100} smooth={true}> <li>Skills</li></Link>
            
-            <Link spy={true} to="Projects"   offset={-50} smooth={true}> <li>Projects</li></Link>
+            <Link spy={true} to="Projects"  className='nav-items' offset={-50} smooth={true}> <li>Projects</li></Link>
            
-            <Link spy={true} to="Contact"   offset={80} smooth={true}>  <li>Contact</li></Link>
+            <Link spy={true} to="Contact"  className='nav-items' offset={80} smooth={true}>  <li>Contact</li></Link>
           
         </ul>
         </div>

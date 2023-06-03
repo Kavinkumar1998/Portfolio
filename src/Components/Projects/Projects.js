@@ -1,15 +1,9 @@
 import React from 'react';
 import"./Projects.css";
-import { Swiper, SwiperSlide } from "swiper/react";
 import Bulkmail from "./images/bulkmail.jpg";
 import Phonecart from "./images/phone kart.jpg";
 import Movieapp from "./images/movie app.jpg";
 import CRM from "./images/crm.jpg";
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { EffectCoverflow, Navigation, Pagination } from 'swiper';
 import { themeContext } from '../../Context';
 import { useContext } from 'react';
 const Projects = () => {
@@ -74,39 +68,23 @@ const Projects = () => {
       color:darkMode?"white":""
     }}>Password : 123456789</p>
     </div>
-        <Swiper
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={"auto"}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          depth: 100,
-          modifier: 3,
-          slideShadows: true,
-        }}
-        navigation
-        pagination={true}
-        modules={[EffectCoverflow, Pagination, Navigation]}
-        className="mySwiper"
-      >
-        {projects.map((project) => (
-          <SwiperSlide id='swiper-slide' key={project.id}>
-            <img src={project.imgSrc} alt={`Project ${project.id}`} />
+  
+  <div className="row" >
+       {projects.map((project) => (
+          <div className="container" key={project.id}>
+            <img className='img' src={project.imgSrc} alt={`Project ${project.id}`} />
             <h2 className='heading-2'>{project.title}</h2>
-            <div className="slider-buttons">
-              <button onClick={() => openLink(project.frontEndSource)}>
-                Front End Source
-              </button>
+            <div className="buttons">
+              <button onClick={() => openLink(project.frontEndSource)}>Front End Source </button>
+
               <button onClick={() => openLink(project.live)}>Live</button>
-              <button onClick={() => openLink(project.backEndSource)}>
-                Back End Source
-              </button>
+
+              <button onClick={() => openLink(project.backEndSource)}> Back End Source </button>
             </div>
-          </SwiperSlide>
+          </div>
         ))}
-      </Swiper>
+</div>
+       
     </div>
   )
 }
