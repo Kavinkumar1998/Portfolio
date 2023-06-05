@@ -2,6 +2,7 @@
   display:flex;
   height :90vh;
   margin-top:6rem;  
+  padding: 2rem;
  }
  .h-left{
     display:flex;
@@ -76,10 +77,10 @@
 
 @media screen and (max-width: 480px) {
    .Home{
-      margin-top:5px; 
+      margin-top:-50px; 
       display: flex; 
       flex-direction:column;
-      height: auto;
+      height: 150vh;
 
    }
       .h-right{

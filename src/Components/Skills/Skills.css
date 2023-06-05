@@ -1,7 +1,8 @@
 .Skills{
     display:flex;
     height :80vh;
-    margin-top:1rem;  
+    margin-top:5rem;  
+    padding: 2rem;
 }
 .s-left{
     z-index: 1;
@@ -64,11 +65,11 @@
         flex-direction:column;
         height: auto;
         transform: scale(0.8);
-        align-self: center;
+        align-content: center;
     }
     .Techs{
         padding-top:2rem;
-      
+      margin-right: 50px;
     }
     .Techs>*{
      transform: scale(1.5);
