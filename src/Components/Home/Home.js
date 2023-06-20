@@ -31,7 +31,10 @@ const darkMode=theme.state.darkMode;
       color:darkMode?"white":""
     }}>Hi! I Am</span>
             <span>Kavin Kumar</span>
-            <span>FullStack Developer</span>
+            <span style={{
+      background:darkMode?"purple":"",
+      color:darkMode?"white":""
+    }}>FullStack Developer</span>
         <div className="h-icons">
             <a href="https://github.com/Kavinkumar1998" target='blank'><img src={gitIcon} alt="GitHub" /></a>
           <a href="https://www.linkedin.com/in/kavin-kumar-060343153/" target='blank'>

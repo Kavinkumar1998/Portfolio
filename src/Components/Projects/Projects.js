@@ -27,7 +27,7 @@ const Projects = () => {
     },
     {
       id: "movie-app",
-      title: "Movie Review App",
+      title: "Movie App",
       imgSrc: Movieapp,
       frontEndSource: "https://github.com/Kavinkumar1998/Passwordresetflow",
       live: "https://passwordresetmovieapp.netlify.app/",
