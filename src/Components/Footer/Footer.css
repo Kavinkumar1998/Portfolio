@@ -1,6 +1,6 @@
 .footer-main{
     padding: 2rem;
-    background-color: var(--purple);
+    background-color: var(--blueCard);
         margin: 0;
         padding: 0;
         height:20vh;
@@ -12,7 +12,7 @@
     padding: 4rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size:30px;  
-     color: black;
+     color:#FFEEBB;
 }
 @media screen and (max-width: 480px) {
     .footer-main{

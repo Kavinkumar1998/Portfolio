@@ -1,11 +1,11 @@
  .Home{
   display:flex;
-  height :90vh;
+  height :70vh;
   margin-top:6rem;  
   padding: 2rem;
  }
  .h-left{
-    display:flex;
+
     position: realtive;
     flex:1;
     flex-direction:column;
@@ -13,23 +13,25 @@
   
  }
  .h-name{
+   align-items: center;
     display:flex;
     flex-direction:column;
  }
  .h-name>:nth-child(1){
    color:var(--black);
   font-weight:bold ;
-  font-size:5em;
+  font-size:6em;
+
  }
  .h-name>:nth-child(2){
    color: var(--orange);
    font-weight: bold;
-   font-size:3rem;
+   font-size:4rem;
  }
  .h-name>:nth-child(3){
    color: var(--black);
    font-weight: bold;
-   font-size:3rem;
+   font-size:4rem;
  }
 .h-icons{
    margin:1rem;
@@ -44,35 +46,15 @@
 .h-icons>*:hover{
    cursor:pointer
 }
-.resume-download{
+.button resume-download{
    width: 8rem;
   height: 3rem;
+  align-items: center;
 }
 
 
 
-.h-right{
-   display:flex;
-   position: realtive;
-   flex:1;
-   flex-direction: column;
-   flex-wrap: wrap;
-   gap :2rem;
-   padding-right: 3rem;
-}
-.h-right>*{
-   height:200px;
-   width:200px;
-   flex:3;
-   box-shadow : 3px 3px 10px 0px rgb(22, 11, 11);
-   border-radius: 20px;
-}
-.h-right>*:hover{
-   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    transform:scale(1.3)
 
-}
 
 
 @media screen and (max-width: 480px) {
@@ -80,26 +62,10 @@
       margin-top:-50px; 
       display: flex; 
       flex-direction:column;
-      height: 150vh;
+      height: 80vh;
 
    }
-      .h-right{
-         padding: 2rem;
-         display:flex;
-         position: realtive;
-         flex:1;
-         flex-direction:row;
-         flex-wrap: wrap;
-         gap :2rem;
-         padding-right: 3rem;
-      }
-      .h-right>*{
-         height:100px;
-         width:100px;
-         flex:1;
-         box-shadow : 3px 3px 10px 0px rgb(22, 11, 11);
-         border-radius: 20px;
-      }
+    
       
    
    .h-left{

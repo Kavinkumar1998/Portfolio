@@ -2,15 +2,11 @@ import React, { useContext } from 'react'
 import "./Home.css";
 import gitIcon from "../Image/gitIcon.png";
 import LinkedIn from "../Image/linkedinIcon.png";
-import bootstarp from "./homeimages/bootstrap.png";
-import react from "./homeimages/react.png";
-import basic from  "./homeimages/html.png";
-import node from "./homeimages/node.png";
-import js from "./homeimages/js.png";
-import mongo from "./homeimages/mongodb.png";
-import atlas from "./homeimages/atlas.png";
-import mui from "./homeimages/mui.png";
+import AOS from "aos";
+import 'aos/dist/aos.css';
 import { themeContext } from '../../Context';
+import { useEffect } from 'react';
+
 
 function redirect(){
   window.open(
@@ -19,6 +15,10 @@ function redirect(){
 }
 const Home = () => {
   
+  useEffect(() => {
+    AOS.init();
+  }, [])
+  
 const theme=useContext(themeContext);
 const darkMode=theme.state.darkMode;
 
@@ -26,35 +26,28 @@ const darkMode=theme.state.darkMode;
     <div className='Home' id="Home">
       <div className='h-left'>
         <div className='h-name'>
-            <span  style={{
-      background:darkMode?"purple":"",
+            <span data-aos="fade-down"data-aos-delay="300" style={{
+  
       color:darkMode?"white":""
     }}>Hi! I Am</span>
-            <span>Kavin Kumar</span>
-            <span style={{
-      background:darkMode?"purple":"",
+            <span data-aos="fade-right"data-aos-delay="500" 
+            style={{
+  
+              color:darkMode?"":"#0A6EBD"}}
+            >Kavin Kumar</span>
+            <span data-aos="fade-left "data-aos-delay="1000" style={{
       color:darkMode?"white":""
     }}>FullStack Developer</span>
-        <div className="h-icons">
+        <div data-aos="fade-up"data-aos-delay="600" className="h-icons">
             <a href="https://github.com/Kavinkumar1998" target='blank'><img src={gitIcon} alt="GitHub" /></a>
           <a href="https://www.linkedin.com/in/kavin-kumar-060343153/" target='blank'>
           <img src={LinkedIn } alt="LinkedIn"/>
           </a>
         </div>
+        <button data-aos="fade-up"data-aos-delay="600" className='button resume-download'   style={{ background:darkMode?"":"#0A6EBD", boxShadow:darkMode?"": "0px 20px 24px 3px rgba(37, 169, 245, 0.42)"}} onClick={redirect}>RESUME</button>
         </div>
-       <button className='button resume-download' onClick={redirect}>RESUME</button>
-      </div>
-      <div className='h-right'>
-      <img src={basic} alt="basic"/>
-        <img src={js} alt="js"/>
-        <img src={react} alt="react"/>
-        <img src={bootstarp} alt="bootstarp"/>
-        <img src={mui} alt="mui"/>
-        <img src={node} alt="node"/>
-        <img src={mongo} alt="mongo"/>
-        <img src={atlas} alt="atlas"/>
-       
-       </div>
+      
+      </div>  
     </div>
   )
 }

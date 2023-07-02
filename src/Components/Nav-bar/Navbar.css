@@ -8,7 +8,7 @@
     margin-bottom: 2rem;
     top: 0;
     gap:40rem;
-    background-color: rgba(202, 222, 253, 0.152);
+    background-color:var(--blueCard);
     backdrop-filter: blur(10px);
     box-shadow: none;
    

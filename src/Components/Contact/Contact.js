@@ -2,10 +2,16 @@ import React, { useContext, useRef, useState } from 'react'
 import "./Contact.css";
 import emailjs from '@emailjs/browser';
 import { themeContext } from '../../Context';
+import AOS from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 const Contact = () => {
     const theme= useContext(themeContext);
 const darkMode = theme.state.darkMode;
 
+useEffect(() => {
+    AOS.init();
+  }, [])
 
     const form = useRef();
  const [done,setdone]=useState(false)
@@ -24,19 +30,20 @@ const darkMode = theme.state.darkMode;
     <div className="Contact" id="Contact">
 <div className="c-left">
     <div className="content">
-        <span style={{
-      background:darkMode?"purple":"",
+        <span data-aos="fade-left"data-aos-delay="400"  style={{
       color:darkMode?"white":""
     }}>Get in Touch</span>
-        <span>Contact Me</span>
+        <span data-aos="fade-right"data-aos-delay="400"  style={{
+  
+  color:darkMode?"":"#0A6EBD"}} >Contact Me</span>
     </div>
 </div>
-<div className="c-right">
+<div data-aos="fade-up"data-aos-delay="400" className="c-right">
     <form ref={form} onSubmit={sendEmail}>
-        <input type="text" name="user_name" className="User" placeholder="Name"/>
-        <input type="email" name="user_email" className="User" placeholder="Email"/>
-        <input type="message" name="message" className="User" placeholder="Message"/>
-        <input type="submit" value="Send" className="button"/>
+        <input type="text" name="user_name" className="User"  style={{ border:darkMode?"":"2px solid #0A6EBD"}} placeholder="Name"/>
+        <input type="email" name="user_email" className="User"  style={{ border:darkMode?"":"2px solid #0A6EBD"}} placeholder="Email"/>
+        <input type="message" name="message" className="User"  style={{ border:darkMode?"":"2px solid #0A6EBD"}} placeholder="Message"/>
+        <input type="submit" value="Send" className="button"  style={{ background:darkMode?"":"#0A6EBD", boxShadow:darkMode?"": "0px 20px 24px 3px rgba(37, 169, 245, 0.42)"}}/>
         <span>{done && "Thanks for Contacting Me"}</span>
          </form>
 </div>

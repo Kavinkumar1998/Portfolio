@@ -11,11 +11,11 @@ import Projects from './Components/Projects/Projects';
 function App() {
 const theme= useContext(themeContext);
 const darkMode = theme.state.darkMode;
-
+// 
   return (
     <div className="App" 
     style={{
-      background:darkMode?"purple":"#A6D0DD",
+      background:darkMode?"#4A55A2":"#EDF5E1",
       color:darkMode?"white":""
     }}>
       <Navbar/>

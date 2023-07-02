@@ -6,8 +6,14 @@ import Movieapp from "./images/movie app.jpg";
 import CRM from "./images/crm.jpg";
 import { themeContext } from '../../Context';
 import { useContext } from 'react';
-const Projects = () => {
+import AOS from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
+const Projects = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   const projects = [
     {
       id: "Bulk Mail Tool",
@@ -52,24 +58,23 @@ const Projects = () => {
   
   return (
     <div  className='projects'id="Projects">
-        <h1 className='project-heading'>Projects</h1>
+        <h1 data-aos="fade-down"data-aos-delay="300"  className='project-heading'  style={{
+  
+  color:darkMode?"":"#0A6EBD"}}>Projects</h1>
         <div className='credentials'>
           
-        <p style={{
-      background:darkMode?"purple":"",
+        <p data-aos="fade-down"data-aos-delay="300"  style={{
       color:darkMode?"white":""
     }}>credentials</p>
-        <p style={{
-      background:darkMode?"purple":"",
+        <p data-aos="fade-down"data-aos-delay="300"  style={{
       color:darkMode?"white":""
     }}>Email : kavinajith1498@gmail.com</p>
-          <p  style={{
-      background:darkMode?"purple":"",
+          <p  data-aos="fade-down"data-aos-delay="300"  style={{
       color:darkMode?"white":""
     }}>Password : 123456789</p>
     </div>
   
-  <div className="row" >
+  <div data-aos="fade-up"data-aos-delay="300"  className="row" >
        {projects.map((project) => (
           <div className="container" key={project.id}>
             <img className='img' src={project.imgSrc} alt={`Project ${project.id}`} />

@@ -12,43 +12,96 @@ import Node from "../Image/NodeSkills.png";
 import ReactSkill from "../Image/ReactSkills.png";
 import Redux from "../Image/RedusSkills.png";
 import mui from "../Image/muiSkills.png";
+import AOS from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+import { themeContext } from '../../Context';
+import { useContext } from "react";
 const Skills = () => {
+    const theme=useContext(themeContext);
+  const darkMode=theme.state.darkMode;
+
+    useEffect(() => {
+        AOS.init();
+      }, [])
+    
   return (
     <div className="Skills" id="Skills">
-        <div className="s-left">
-        <h1 className="Skills-me">
+       <h1 data-aos="fade-down"data-aos-delay="300" className="Skills-me"  style={{
+  
+  color:darkMode?"":"#0A6EBD"}}>
         Skills And Tools
         </h1>
         <div className="Techs">
-        <img src={js} alt="javascript" />
-         <img src={Html} alt="Html" />
-         <img src={Css} alt="Css" />
-         <img src={ReactSkill} alt="react" />
-         <img src={Redux} alt="Redux" />
-         <img src={mui} alt="Mui" />
-         <img src={bootstrap} alt="bootstrap" />
-         <img src={Node} alt="Node" />
-         <img src={Mongo} alt="Mongo" />
-         <img src={Github} alt="github" />
-         <img src={Git} alt="Git" />
-         <img src={aws} alt="aws" />
+        <img data-aos="flip-up"data-aos-delay="600" src={js} alt="javascript" />
+         <img data-aos="flip-up"data-aos-delay="600" src={Html} alt="Html" />
+         <img data-aos="flip-up"data-aos-delay="600" src={Css} alt="Css" />
+         <img data-aos="flip-up"data-aos-delay="600" src={ReactSkill} alt="react" />
+         <img data-aos="flip-up"data-aos-delay="600" src={Redux} alt="Redux" />
+         <img data-aos="flip-up"data-aos-delay="600" src={mui} alt="Mui" />
+         <img data-aos="flip-down"data-aos-delay="600" src={bootstrap} alt="bootstrap" />
+         <img data-aos="flip-down"data-aos-delay="600" src={Node} alt="Node" />
+         <img data-aos="flip-down"data-aos-delay="600" src={Mongo} alt="Mongo" />
+         <img data-aos="flip-down"data-aos-delay="600" src={Github} alt="github" />
+         <img data-aos="flip-down"data-aos-delay="600" src={Git} alt="Git" />
+         <img data-aos="flip-down"data-aos-delay="600" src={aws} alt="aws" />
         </div>
+
+
+
+     
+{/* 
+            <div className="skill-box">
+                <span className="title">HTML</span>
+                <div className="skill-bar">
+                    <span className="skill-per html">
+                        <span className="tooltip">95%</span>
+                    </span>
+                </div>
+            </div>
+            <div className="skill-box">
+                <span className="title">CSS</span>
+                <div className="skill-bar">
+                    <span className="skill-per css">
+                        <span className="tooltip">80%</span>
+                    </span>
+                </div>
+            </div>
+            <div className="skill-box">
+                <span className="title">JavaScript</span>
+                <div className="skill-bar">
+                    <span className="skill-per javascript">
+                        <span className="tooltip">60%</span>
+                    </span>
+                </div>
+            </div>
+            <div className="skill-box">
+                <span className="title">NodeJS</span>
+                <div className="skill-bar">
+                    <span className="skill-per nodejs">
+                        <span className="tooltip">40%</span>
+                    </span>
+                </div>
+            </div>
+            <div className="skill-box">
+                <span className="title">ReactJS</span>
+                <div className="skill-bar">
+                    <span className="skill-per reactjs">
+                        <span className="tooltip">70%</span>
+                    </span>
+                </div>
+            </div>
+            <div className="skill-box">
+                <span className="title">ExpressJS</span>
+                <div className="skill-bar">
+                    <span className="skill-per expressjs">
+                        <span className="tooltip">75%</span>
+                    </span>
+                </div>
+            </div> */}
         </div>
-        <div className="s-right">
-      <h1 className="skills-head">Skills Acquired</h1>
-      <h2>
-      <ul className="skills-list">
-        <li>Front-end Languages such as javascript,HTML,CSS</li>
-        <li>Front-end Frameworks-React.js and Styling libraries Material UI,BootStrap</li>
-        <li>Backend Technologies and Frameworks. JavaScript and its environments like NodeJS and ExpressJS</li>
-        <li>Database Management Systems using MongoDB,MongoDB Atlas</li>
-        <li>Version Control using Git and GitHub</li>
-        <li>Web Hosting Platforms such as Netlify,Vercel and Render</li>
-      </ul>
-      </h2>
+      
     
-        </div>
-    </div>
   )
 }
 
