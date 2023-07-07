@@ -40,7 +40,7 @@ const darkMode=theme.state.darkMode;
     }}>FullStack Developer</span>
         <div data-aos="fade-up"data-aos-delay="600" className="h-icons">
             <a href="https://github.com/Kavinkumar1998" target='blank'><img src={gitIcon} alt="GitHub" /></a>
-          <a href="https://www.linkedin.com/in/kavinkumar-karunakaran/" target='blank'>
+          <a href="https://www.linkedin.com/in/kavinkumar-mern-dev/" target='blank'>
           <img src={LinkedIn } alt="LinkedIn"/>
           </a>
         </div>
