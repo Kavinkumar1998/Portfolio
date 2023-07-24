@@ -10,7 +10,7 @@ import { useEffect } from 'react';
 
 function redirect(){
   window.open(
-    "https://drive.google.com/file/d/1rLfhBrIUE2AmNnshf1cV4j9ccqbTjux1/view?usp=sharing"
+    "https://drive.google.com/file/d/1xXXSObucWQWobVG-0gk9lG5S0wQ9d00d/view?usp=sharing"
   );
 }
 const Home = () => {
