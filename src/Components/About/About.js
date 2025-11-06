@@ -22,17 +22,25 @@ const About = () => {
     <div className="About" id="About">
        <div data-aos="fade-down"data-aos-delay="500"  className="a-left">
       <h1 data-aos="fade-up"data-aos-delay="500" className="About-me"   style={{
-  
-  color:darkMode?"":"#0A6EBD"}}>
+
+  color:darkMode?"#60A5FA":"#2563EB"}}>
           About Me
         </h1>
-        <h2>
-        Hi, im a well Qualified FullStack Developer Familiar with knowlwdge of HTML,CSS and Advanced JavaScript.
-Knowledgeble of Frontend and Backend Development with Database Management.Handles any part of the process with ease.
-As a Collaborative team player with a willingness to learn in and grow with the organization.
-I am committed to staying up-to-date with the latest industry trends and technologies, 
-and I am confident that my dedication and proficiency will allow me to excel in my role and 
-contribute to the success of the team.
+        <h2 style={{
+          color:darkMode?"#CBD5E1":"#475569",
+          lineHeight:"1.8",
+          fontSize:"1.1rem",
+          textAlign: "justify",
+          maxWidth: "90%"
+        }}>
+        I'm a passionate Full Stack Developer with expertise in HTML, CSS, and Advanced JavaScript. 
+        I specialize in building scalable web applications using modern technologies like React, Node.js, and MongoDB. 
+        With a strong foundation in both frontend and backend development, I excel at creating seamless user experiences 
+        and robust server-side solutions.
+        <br/><br/>
+        As a collaborative team player, I thrive in dynamic environments and am always eager to learn and grow. 
+        I'm committed to staying current with industry best practices and emerging technologies, ensuring that 
+        I deliver high-quality, maintainable code that drives business success.
         </h2>
          </div>
       <div data-aos="fade-left"data-aos-delay="700"  className="a-right"> 

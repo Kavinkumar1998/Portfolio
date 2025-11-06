@@ -14,15 +14,21 @@
     z-index: 1;
 }
 .About-me{
-    color:var(--orange);
+    color:var(--primary-blue);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size:50px;
     text-align: center;
     margin-bottom: 2rem;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 .About-me:hover{
     cursor:pointer;
-    color:black
+    transform: scale(1.05);
+    filter: brightness(1.2);
 }
 .a-right{
     padding-top:5rem ;

@@ -15,8 +15,8 @@ const darkMode = theme.state.darkMode;
   return (
     <div className="App" 
     style={{
-      background:darkMode?"#4A55A2":"#EDF5E1",
-      color:darkMode?"white":""
+      background:darkMode?"#0F172A":"#FFFFFF",
+      color:darkMode?"#F8FAFC":"#1E293B"
     }}>
       <Navbar/>
       <Home/>

@@ -12,32 +12,32 @@ const Navbar = () => {
     <div className="navbar">
         <div className='navbar-left'>
             <div className="navbar-name" style={{
-  
-  color:darkMode?"":"#FFEEBB"}}>KAVIN</div>
+
+  color:darkMode?"#F8FAFC":"#F8FAFC"}}>KAVIN</div>
             <Toggle/>
              </div>
         <div className='navbar-right'> 
         <div className="navbar-list" >
         <ul style={{listStyleType:"none"}}>
           <Link spy={true} to="Home" className='nav-items'    offset={-30} smooth={true}  style={{
-  
-  color:darkMode?"":"#FFEEBB"}}>   <li>Home</li> </Link>
+
+  color:darkMode?"#F8FAFC":"#F8FAFC"}}>   <li>Home</li> </Link>
          
             <Link spy={true} to="About" className='nav-items'  offset={-30} smooth={true} style={{
-  
-  color:darkMode?"":"#FFEEBB"}}> <li>About</li></Link>
+
+  color:darkMode?"#F8FAFC":"#F8FAFC"}}> <li>About</li></Link>
            
             <Link spy={true} to="Skills" className='nav-items'  offset={-70} smooth={true} style={{
-  
-  color:darkMode?"":"#FFEEBB"}}> <li>Skills</li></Link>
+
+  color:darkMode?"#F8FAFC":"#F8FAFC"}}> <li>Skills</li></Link>
            
             <Link spy={true} to="Projects"  className='nav-items' offset={-50} smooth={true} style={{
-  
-  color:darkMode?"":"#FFEEBB"}}> <li>Projects</li></Link>
+
+  color:darkMode?"#F8FAFC":"#F8FAFC"}}> <li>Projects</li></Link>
            
             <Link spy={true} to="Contact"  className='nav-items' offset={40} smooth={true} style={{
-  
-  color:darkMode?"":"#FFEEBB"}}>  <li>Contact</li></Link>
+
+  color:darkMode?"#F8FAFC":"#F8FAFC"}}>  <li>Contact</li></Link>
           
         </ul>
         </div>

@@ -18,20 +18,26 @@
     flex-direction:column;
  }
  .h-name>:nth-child(1){
-   color:var(--black);
+   color:var(--text-dark);
   font-weight:bold ;
   font-size:6em;
-
+  transition: color 0.3s ease;
  }
  .h-name>:nth-child(2){
-   color: var(--orange);
+   color: var(--primary-blue);
    font-weight: bold;
    font-size:4rem;
+   background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   transition: all 0.3s ease;
  }
  .h-name>:nth-child(3){
-   color: var(--black);
+   color: var(--text-dark);
    font-weight: bold;
    font-size:4rem;
+   transition: color 0.3s ease;
  }
 .h-icons{
    margin:1rem;

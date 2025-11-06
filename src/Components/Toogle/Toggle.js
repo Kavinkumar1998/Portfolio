@@ -11,11 +11,11 @@ const handleClick = ()=>{
   theme.dispatch({type:"toggle"});
 }
   return (
-    <div className="toggle" style={{border:darkMode?"":"3px solid #FFEEBB"}} onClick={handleClick}>
-        <Moon  style={{color:darkMode?"":"#FFEEBB"}} />
-        <Sun  style={{color:darkMode?"":"#FFEEBB"}}/>
+    <div className="toggle" style={{border:darkMode?"3px solid #475569":"3px solid #2563EB"}} onClick={handleClick}>
+        <Moon  style={{color:darkMode?"#60A5FA":"#2563EB"}} />
+        <Sun  style={{color:darkMode?"#60A5FA":"#2563EB"}}/>
       <div className="t-button"
-    style={darkMode ? {left: "2px"} : {right: "2px", backgroundColor: darkMode ? "" : "#FFEEBB"}}></div>
+    style={darkMode ? {left: "2px", backgroundColor: "#3B82F6"} : {right: "2px", backgroundColor: "#2563EB"}}></div>
     </div>
   )
 }

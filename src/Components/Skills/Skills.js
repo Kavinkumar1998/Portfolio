@@ -29,23 +29,23 @@ const Skills = () => {
   return (
     <div className="Skills" id="Skills">
        <h1 data-aos="fade-down"data-aos-delay="300" className="Skills-me"  style={{
-  
-  color:darkMode?"":"#0A6EBD"}}>
+
+  color:darkMode?"#60A5FA":"#2563EB"}}>
         Skills And Tools
         </h1>
         <div className="Techs">
-<div data-aos="flip-up"data-aos-delay="600" className="skilllist"> <img  className="img-skill" src={js} alt="javascript" /> <LinearProgress sx={{width:"7rem",marginLeft:"10px"}} color="success" variant="determinate" value={80} /></div>
-<div data-aos="flip-up"data-aos-delay="600" className="skilllist"> <img  className="img-skill" src={Html} alt="Html" /><LinearProgress sx={{width:"7rem",marginLeft:"10px"}} color="success" variant="determinate" value={80} /> </div>
-<div data-aos="flip-up"data-aos-delay="600" className="skilllist"><img  className="img-skill" src={Css} alt="Css" /> <LinearProgress sx={{width:"7rem",marginLeft:"10px"}} color="success" variant="determinate" value={80} /></div>
-<div data-aos="flip-up"data-aos-delay="600" className="skilllist"><img  className="img-skill" src={ReactSkill} alt="react" /> <LinearProgress sx={{width:"7rem",marginLeft:"10px"}} color="success" variant="determinate" value={80} /></div>
-<div data-aos="flip-up"data-aos-delay="600" className="skilllist"> <img  className="img-skill" src={Redux} alt="Redux" /> <LinearProgress sx={{width:"7rem",marginLeft:"10px"}} color="success" variant="determinate" value={60} /></div>
-<div data-aos="flip-up"data-aos-delay="600" className="skilllist"> <img  className="img-skill" src={mui} alt="Mui" /> <LinearProgress sx={{width:"7rem",marginLeft:"10px"}} color="success" variant="determinate" value={80} /></div>
-<div data-aos="flip-down"data-aos-delay="600" className="skilllist"> <img  className="img-skill" src={bootstrap} alt="bootstrap" /> <LinearProgress sx={{width:"7rem",marginLeft:"10px"}} color="success" variant="determinate" value={75} /></div>
-<div data-aos="flip-down"data-aos-delay="600" className="skilllist"> <img  className="img-skill" src={Node} alt="Node" /><LinearProgress sx={{width:"7rem",marginLeft:"10px"}} color="success" variant="determinate" value={80} /></div>
-<div data-aos="flip-down"data-aos-delay="600" className="skilllist"> <img  className="img-skill" src={Mongo} alt="Mongo" /> <LinearProgress sx={{width:"7rem",marginLeft:"10px"}} color="success" variant="determinate" value={70} /></div>
-<div data-aos="flip-down"data-aos-delay="600" className="skilllist"><img  className="img-skill" src={Github} alt="github" /> <LinearProgress sx={{width:"7rem",marginLeft:"10px"}} color="success" variant="determinate" value={80} /></div>     
-<div data-aos="flip-down"data-aos-delay="600" className="skilllist"> <img  className="img-skill" src={Git} alt="Git" /> <LinearProgress sx={{width:"7rem",marginLeft:"10px"}} color="success" variant="determinate" value={60} /></div>
-<div data-aos="flip-down"data-aos-delay="600" className="skilllist"> <img  className="img-skill" src={aws} alt="aws" /> <LinearProgress sx={{width:"7rem",marginLeft:"10px"}} color="success" variant="determinate" value={50} /></div>      
+<div data-aos="flip-up"data-aos-delay="600" className="skilllist" style={{backgroundColor:darkMode?"#334155":"#F1F5F9", borderColor:darkMode?"#60A5FA":"#2563EB"}}> <img  className="img-skill" src={js} alt="javascript" /> <LinearProgress sx={{width:"7rem",margin:"0.5rem auto 0"}} color="success" variant="determinate" value={80} /></div>
+<div data-aos="flip-up"data-aos-delay="600" className="skilllist" style={{backgroundColor:darkMode?"#334155":"#F1F5F9", borderColor:darkMode?"#60A5FA":"#2563EB"}}> <img  className="img-skill" src={Html} alt="Html" /><LinearProgress sx={{width:"7rem",margin:"0.5rem auto 0"}} color="success" variant="determinate" value={80} /> </div>
+<div data-aos="flip-up"data-aos-delay="600" className="skilllist" style={{backgroundColor:darkMode?"#334155":"#F1F5F9", borderColor:darkMode?"#60A5FA":"#2563EB"}}><img  className="img-skill" src={Css} alt="Css" /> <LinearProgress sx={{width:"7rem",margin:"0.5rem auto 0"}} color="success" variant="determinate" value={80} /></div>
+<div data-aos="flip-up"data-aos-delay="600" className="skilllist" style={{backgroundColor:darkMode?"#334155":"#F1F5F9", borderColor:darkMode?"#60A5FA":"#2563EB"}}><img  className="img-skill" src={ReactSkill} alt="react" /> <LinearProgress sx={{width:"7rem",margin:"0.5rem auto 0"}} color="success" variant="determinate" value={80} /></div>
+<div data-aos="flip-up"data-aos-delay="600" className="skilllist" style={{backgroundColor:darkMode?"#334155":"#F1F5F9", borderColor:darkMode?"#60A5FA":"#2563EB"}}> <img  className="img-skill" src={Redux} alt="Redux" /> <LinearProgress sx={{width:"7rem",margin:"0.5rem auto 0"}} color="success" variant="determinate" value={60} /></div>
+<div data-aos="flip-up"data-aos-delay="600" className="skilllist" style={{backgroundColor:darkMode?"#334155":"#F1F5F9", borderColor:darkMode?"#60A5FA":"#2563EB"}}> <img  className="img-skill" src={mui} alt="Mui" /> <LinearProgress sx={{width:"7rem",margin:"0.5rem auto 0"}} color="success" variant="determinate" value={80} /></div>
+<div data-aos="flip-down"data-aos-delay="600" className="skilllist" style={{backgroundColor:darkMode?"#334155":"#F1F5F9", borderColor:darkMode?"#60A5FA":"#2563EB"}}> <img  className="img-skill" src={bootstrap} alt="bootstrap" /> <LinearProgress sx={{width:"7rem",margin:"0.5rem auto 0"}} color="success" variant="determinate" value={75} /></div>
+<div data-aos="flip-down"data-aos-delay="600" className="skilllist" style={{backgroundColor:darkMode?"#334155":"#F1F5F9", borderColor:darkMode?"#60A5FA":"#2563EB"}}> <img  className="img-skill" src={Node} alt="Node" /><LinearProgress sx={{width:"7rem",margin:"0.5rem auto 0"}} color="success" variant="determinate" value={80} /></div>
+<div data-aos="flip-down"data-aos-delay="600" className="skilllist" style={{backgroundColor:darkMode?"#334155":"#F1F5F9", borderColor:darkMode?"#60A5FA":"#2563EB"}}> <img  className="img-skill" src={Mongo} alt="Mongo" /> <LinearProgress sx={{width:"7rem",margin:"0.5rem auto 0"}} color="success" variant="determinate" value={70} /></div>
+<div data-aos="flip-down"data-aos-delay="600" className="skilllist" style={{backgroundColor:darkMode?"#334155":"#F1F5F9", borderColor:darkMode?"#60A5FA":"#2563EB"}}><img  className="img-skill" src={Github} alt="github" /> <LinearProgress sx={{width:"7rem",margin:"0.5rem auto 0"}} color="success" variant="determinate" value={80} /></div>     
+<div data-aos="flip-down"data-aos-delay="600" className="skilllist" style={{backgroundColor:darkMode?"#334155":"#F1F5F9", borderColor:darkMode?"#60A5FA":"#2563EB"}}> <img  className="img-skill" src={Git} alt="Git" /> <LinearProgress sx={{width:"7rem",margin:"0.5rem auto 0"}} color="success" variant="determinate" value={60} /></div>
+<div data-aos="flip-down"data-aos-delay="600" className="skilllist" style={{backgroundColor:darkMode?"#334155":"#F1F5F9", borderColor:darkMode?"#60A5FA":"#2563EB"}}> <img  className="img-skill" src={aws} alt="aws" /> <LinearProgress sx={{width:"7rem",margin:"0.5rem auto 0"}} color="success" variant="determinate" value={50} /></div>      
              </div>
 
         </div>

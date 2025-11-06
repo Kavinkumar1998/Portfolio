@@ -31,20 +31,25 @@ useEffect(() => {
 <div className="c-left">
     <div className="content">
         <span data-aos="fade-left"data-aos-delay="400"  style={{
-      color:darkMode?"white":""
+      color:darkMode?"#F8FAFC":"#1E293B"
     }}>Get in Touch</span>
         <span data-aos="fade-right"data-aos-delay="400"  style={{
-  
-  color:darkMode?"":"#0A6EBD"}} >Contact Me</span>
+
+  color:darkMode?"#60A5FA":"#2563EB"}} >Contact Me</span>
     </div>
 </div>
 <div data-aos="fade-up"data-aos-delay="400" className="c-right">
     <form ref={form} onSubmit={sendEmail}>
-        <input type="text" name="user_name" className="User"  style={{ border:darkMode?"":"2px solid #0A6EBD"}} placeholder="Name"/>
-        <input type="email" name="user_email" className="User"  style={{ border:darkMode?"":"2px solid #0A6EBD"}} placeholder="Email"/>
-        <input type="message" name="message" className="User"  style={{ border:darkMode?"":"2px solid #0A6EBD"}} placeholder="Message"/>
-        <input type="submit" value="Send" className="button"  style={{ background:darkMode?"":"#0A6EBD", boxShadow:darkMode?"": "0px 20px 24px 3px rgba(37, 169, 245, 0.42)"}}/>
-        <span>{done && "Thanks for Contacting Me"}</span>
+        <input type="text" name="user_name" className="User"  style={{ border:darkMode?"2px solid #475569":"2px solid #2563EB"}} placeholder="Name"/>
+        <input type="email" name="user_email" className="User"  style={{ border:darkMode?"2px solid #475569":"2px solid #2563EB"}} placeholder="Email"/>
+        <textarea name="message" className="User"  style={{ border:darkMode?"2px solid #475569":"2px solid #2563EB"}} placeholder="Your Message" rows="4"/>
+        <input type="submit" value="Send Message" className="button"  style={{ background:darkMode?"linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)":"linear-gradient(135deg, #2563EB 0%, #1E40AF 100%)", boxShadow:darkMode?"0px 10px 25px rgba(59, 130, 246, 0.4)": "0px 10px 25px rgba(37, 99, 235, 0.3)"}}/>
+        <span style={{
+          color: darkMode ? "#10B981" : "#059669",
+          fontWeight: "600",
+          fontSize: "1.1rem",
+          marginTop: "1rem"
+        }}>{done && "✓ Message sent successfully! I'll get back to you soon."}</span>
          </form>
 </div>
     </div>

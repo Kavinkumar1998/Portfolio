@@ -18,16 +18,28 @@
 }
 .c-right .User{
     width:20rem;
-    height:2rem;
+    min-height:2rem;
     padding:0.5rem;
     outline:none;
-    border:2px solid var(--orange);
+    border:2px solid var(--primary-blue);
     border-radius:8px;
     font-size:16px;
+    transition: all 0.3s ease;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    font-family: inherit;
+    resize: vertical;
 }
 
-textarea{
-    height:4rem !important;
+.c-right .User:focus{
+    border-color: var(--primary-blue-light);
+    box-shadow: 0px 0px 0px 3px rgba(37, 99, 235, 0.1);
+    transform: translateY(-2px);
+}
+
+textarea.User{
+    min-height:6rem;
+    padding:0.75rem;
 }
 
 
@@ -43,14 +55,20 @@ textarea{
     flex-direction:column;
 }
 .content>:nth-child(1){
-    color:var(--black);
+    color:var(--text-dark);
    font-weight:bold ;
    font-size:5em;
+   transition: color 0.3s ease;
   }
   .content>:nth-child(2){
-    color: var(--orange);
+    color: var(--primary-blue);
     font-weight: bold;
     font-size:3rem;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: all 0.3s ease;
   }
   @media screen and (max-width: 480px) {
 .Contact{
